@@ -1,0 +1,17 @@
+
+#btn-color{
+  background:#2D002B;
+  border-block-color:#2D002B;
+}
+strong{
+  color:#2D002B;
+}
+
+.form-check-input input[type=checkbox]:checked {
+  background-color: #2D002B !important;
+  color: #ffffff !important;
+}
+#line{
+  position: relative;
+  bottom: 0.2em
+}

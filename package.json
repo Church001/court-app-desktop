@@ -1,0 +1,109 @@
+{
+  "name": "ecar_web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "cross-env": "^5.2.0",
+    "electron-is-dev": "^1.1.0",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "nedb": "^1.8.0",
+    "node-pre-gyp": "^0.14.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-loader-spinner": "^3.1.4",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-toastify": "^5.4.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder -mwl",
+    "release": "yarn react-build && electron-builder --publish=always",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "electron": "^6.0.5",
+    "electron-builder": "^22.1.0",
+    "wait-on": "^3.3.0"
+  },
+  "description": "Court of appeal reports nigeria",
+  "author": {
+    "name": "Mogedy Tech",
+    "email": "etimbukudoekong@gmail.com"
+  },
+  "build": {
+    "appId": "com.courtofappealreport.www",
+    "productName": "Court of Appeals Reports",
+    "copyright": "Copyright © 2019 Laurels and Prizes",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "category": "public.app-category.reference",
+      "target": "dmg",
+      "icon": "build/assets/logo.icns"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/assets/logo.png"
+    }
+  },
+  "main": "public/electron.js",
+  "homepage": "./"
+}

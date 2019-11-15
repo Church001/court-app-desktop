@@ -1,0 +1,97 @@
+// out: ../css/, compress: true
+
+@import url(variables.less);
+@media (min-width: 768px) {
+    .top-section{
+        .col-md-8{
+            .row{
+                float: right;
+            }
+        }
+    }
+    .nav-currency-selector{
+        position: relative;
+        right: -23px;
+    }
+    .calculator{
+        min-height: 450px;
+    }
+    .slider-wrap{
+        background: url('../images/slider/1.jpg') no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .below-slider{
+        .left{
+            border-right: 3px solid @secondary-color;
+        }
+        div{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .row{
+            padding: 0;
+        }
+    }
+    .our-services{
+        background: linear-gradient(@purple 75%, transparent 35%) no-repeat;
+        a,
+        a:link,
+        a:visited{
+            margin-left: 10px;
+        }
+    }
+    .follow-social{
+        text-align: right;
+        a,
+        a:link,
+        a:visited{
+            text-align: left;
+        }
+    }
+    .market-rates{
+        .col-lg-3{
+            border-right: 2px solid @primary-color;
+        }
+    }
+    .blog-wrapper{
+        img{
+            height: 350px;
+        }
+        .blog-content{
+            height: 350px;
+            box-shadow: 0 3px 6px rgba(146, 144, 144, 0.46);
+            padding: 30px 50px !important;
+            color: #666;
+            a,
+            a:link,
+            a:visited{
+                font-weight: bold;
+                color: @primary-color;
+                font-size: 20px;
+            }
+            .blog-date{
+                margin: 20px 0;
+            }
+            .blog-details{
+                line-height: 2;
+            }
+        }
+    }
+    .project{
+        .header{
+            .left{
+                border-right: 3px solid @secondary-color;
+            }
+            div{
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .row{
+                padding: 0;
+            }
+        }
+    }
+}

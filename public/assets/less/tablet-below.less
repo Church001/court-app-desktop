@@ -1,0 +1,123 @@
+// out: ../css/, compress: true
+
+@import url(variables.less);
+@media (max-width: 767px) {
+    .display-4{
+        font-size: 30px !important;
+        font-weight: bolder;
+    }
+    .carousel-item {
+        height: 35vh !important;
+        min-height: 350px;
+    }
+    .top-section{
+        text-align: center;
+        .col-md-4{
+            margin-bottom: 15px;
+        }
+        .col-md-8{
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .header-tagline{
+        margin-bottom: 5px;
+    }
+    .nav-currency-selector{
+        position: relative;
+        right: -20px;
+    }
+    .carousel-wrap{
+        background: url('../images/slider/1.jpg') no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .calculator-wrap{
+        padding: 0;
+    }
+    .calculator{
+        margin-bottom: 0 !important;
+    }
+    .below-slider{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .left{
+            &::after{
+                content:'';
+                height:3px;
+                width:30%;
+                background: @secondary-color;
+                position:absolute;
+                left:calc(13% - 10%);
+                bottom:-5px;
+            }
+            margin-bottom: 10px;
+        }
+        .right{
+            margin-top: 20px;
+            .primary-btn{
+                margin: 5px 0;
+            }
+        }
+    }
+    .who-we-are{
+        img{
+            margin-bottom: 50px;
+        }
+    }
+    .how-it-works{
+        background: linear-gradient(@primary-color 40%, transparent 40%) no-repeat;
+        a{
+            text-align: left;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .story-wrapper{
+        height: 550px !important;
+    }
+    .forgot-password-wrap{
+        text-align: left !important;
+        margin-top: 5px;
+    }
+    .market-rates{
+        .inside{
+            border-bottom: 1px solid @primary-color;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .last{
+            border-bottom: 0;
+        }
+    }
+    .card.hvr-sink{
+        width: 100%;
+    }
+    .project{
+        .header{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .left{
+                &::after{
+                    content:'';
+                    height:3px;
+                    width:30%;
+                    background: @secondary-color;
+                    position:absolute;
+                    left:calc(13% - 10%);
+                    bottom:-5px;
+                }
+                margin-bottom: 10px;
+            }
+            .right{
+                margin-top: 20px;
+                .primary-btn{
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
