@@ -11,7 +11,7 @@
     "cross-env": "^5.2.0",
     "electron-is-dev": "^1.1.0",
     "jwt-decode": "^2.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nedb": "^1.8.0",
     "node-pre-gyp": "^0.14.0",
     "react": "^16.9.0",
